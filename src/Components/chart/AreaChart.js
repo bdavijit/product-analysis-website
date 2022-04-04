@@ -17,19 +17,19 @@ const AreaChartCom = () => {
         },
         {
             "month": "May",
-            "investment": 500000,
+            "investment": 5000,
             "sell": 50000,
-            "revenue": 50000
+            "revenue": 5000
         },
         {
             "month": "Jun",
-            "investment": 500000,
+            "investment": 5000,
             "sell": 20000,
             "revenue": 50000
         },
         {
             "month": "Jul",
-            "investment": 600000,
+            "investment": 60000,
             "sell": 40000,
             "revenue": 60000
         },
@@ -41,7 +41,7 @@ const AreaChartCom = () => {
         }
     ];
     return (
-
+<ResponsiveContainer width="95%" height={400}>
 <AreaChart width={730} height={250} data={data}
   margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
   <defs>
@@ -66,6 +66,7 @@ const AreaChartCom = () => {
   <Area type="monotone" dataKey="sell" stroke="#82ca9d" fillOpacity={1} fill="url(#colorB)" />
   <Area type="monotone" dataKey="revenue" stroke="#BF3312" fillOpacity={1} fill="url(#colorC)" />
 </AreaChart>
+</ResponsiveContainer>
  
     );
 };

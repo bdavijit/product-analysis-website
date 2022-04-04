@@ -60,7 +60,7 @@ const Header = () => {
             onClick={activeLink}
             to="/About"
           >
-            abouts
+            About
           </Link>
         </nav>
       </header>

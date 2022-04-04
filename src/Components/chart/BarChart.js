@@ -1,5 +1,5 @@
 import React from 'react';
-import {  Bar, BarChart, CartesianGrid, Legend, Tooltip, XAxis, YAxis } from 'recharts';
+import {  Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
 const BarChartCom = () => {
     const data =[
@@ -41,7 +41,7 @@ const BarChartCom = () => {
         }
     ];
     return (
-    
+        <ResponsiveContainer width="95%" height={400}>
         <BarChart width={730} height={250} data={data}>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="month" />
@@ -51,6 +51,7 @@ const BarChartCom = () => {
         <Bar dataKey="sell" fill="#8884d8" />
         <Bar dataKey="revenue" fill="#82ca9d" />
       </BarChart>
+      </ResponsiveContainer>
     );
 };
 
