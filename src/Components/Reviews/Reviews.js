@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import useProducts from "../../Hooks/useProduct";
 import ReviewCard2 from "../ReviewCard/ReviewCard";
-import '../Home/Reviews.css'
+import "../Home/Reviews.css";
 
 const Reviews = () => {
   const [Products, SetProducts] = useProducts();
@@ -15,8 +15,9 @@ const Reviews = () => {
   return (
     <div>
       <section className="ReviewBox">
-        {ProductReview?.map((Review) => (
+        {ProductReview?.map((Review, index) => (
           <ReviewCard2
+            key={index}
             image={Review?.image}
             Username={Review?.Username}
             rate={Review?.rate}

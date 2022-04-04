@@ -1,12 +1,12 @@
 import React from "react";
-import './About.css'
+import "./About.css";
 
 const About = () => {
   return (
     <div>
       <div className="AboutBox">
         <div>
-          <h1 style={{ color: "#2827CC" }} >Who We Are</h1>
+          <h1 style={{ color: "#2827CC" }}>Who We Are</h1>
           <p>
             HATIL is considered to be the ‘game-changer’ in Bangladesh’s
             furniture industry. Carefully-chosen raw material,

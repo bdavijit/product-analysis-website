@@ -2,12 +2,12 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 const BlogCard = (props) => {
-  const {id, title, detail, image } = props?.blog;
+  const { id, title, detail, image } = props?.blog;
 
   const navigate = useNavigate();
-  const showBlogDetail = () =>{
-    navigate('/blog/'+ id);
-}
+  const showBlogDetail = () => {
+    navigate("/blog/" + id);
+  };
   return (
     <>
       <div className="BlogCard">
@@ -17,8 +17,14 @@ const BlogCard = (props) => {
 
         <div className="BlogCard-Body flex-item">
           <h1 className="title-Text">{title}</h1>
-          <p className="p-Text">{ detail.length >= 50 ? detail.slice(0, 150) + "...." : detail.slice(0, 150) }</p>
-          <button className="" onClick={showBlogDetail}>Detail</button>
+          <p className="p-Text">
+            {detail.length >= 50
+              ? detail.slice(0, 150) + "...."
+              : detail.slice(0, 150)}
+          </p>
+          <button className="" onClick={showBlogDetail}>
+            Detail
+          </button>
         </div>
       </div>
     </>

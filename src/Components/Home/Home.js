@@ -17,9 +17,9 @@ const Home = () => {
     console.log(ProductReview);
   }, [Products]);
 
-//   const MoreReview = () =>{
-//     Navigate("/blog");
-// }
+  //   const MoreReview = () =>{
+  //     Navigate("/blog");
+  // }
 
   return (
     <>
@@ -35,8 +35,9 @@ const Home = () => {
       </section>
       <h1 style={{ color: "#2827CC" }}>Customer Reviews</h1>
       <section className="ReviewBox">
-        {ProductReview?.map((Review) => (
+        {ProductReview?.map((Review, index) => (
           <ReviewCard2
+            key={index}
             image={Review?.image}
             Username={Review?.Username}
             rate={Review?.rate}
@@ -45,7 +46,9 @@ const Home = () => {
         ))}
       </section>
       <button className="main-button">
-           <Link to="/Reviews" style={{textDecoration: "none", color:"white"}}>More</Link>
+        <Link to="/Reviews" style={{ textDecoration: "none", color: "white" }}>
+          More
+        </Link>
       </button>
     </>
   );

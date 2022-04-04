@@ -1,4 +1,4 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 
@@ -40,9 +40,7 @@ const Header = () => {
             Reviews
           </Link>
           <Link
-            className={`headerLink ${
-              activebtn === "Dashboard" ? "" : ""
-            }`}
+            className={`headerLink ${activebtn === "Dashboard" ? "" : ""}`}
             onClick={activeLink}
             to="/Dashboard"
           >

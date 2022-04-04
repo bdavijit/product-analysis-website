@@ -25,7 +25,7 @@ function App() {
 
         <Route path="/Dashboard" element={<Dashboard />} />
 
-        <Route path="*" element={<Error/>} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </div>
   );
