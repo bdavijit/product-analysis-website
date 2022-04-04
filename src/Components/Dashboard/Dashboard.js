@@ -7,8 +7,11 @@ import './Dashboard.css'
 const Dashboard = () => {
   return (
     <div className="CartBox">
+    <h1 style={{ color: "#2827CC" }}>Investment vs Revenue</h1>
       <LineChartCom />
+      <h1 style={{ color: "#2827CC" }}>Sell vs Revenue</h1>
       <BarChartCom />
+      <h1 style={{ color: "#2827CC" }}>Sell vs Revenue vs Investment</h1>
       <AreaChartCom />
     </div>
   );
