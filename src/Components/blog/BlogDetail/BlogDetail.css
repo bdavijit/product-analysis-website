@@ -1,0 +1,33 @@
+.blogDetails {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.title-Text {
+  font-size: 2vw;
+  color: #2827CC;
+  font-weight: bold;
+}
+
+.p-Text {
+  font-size: 1.5vw;
+}
+
+@media screen and (max-width: 1000px) {
+  .title-Text {
+    font-size: 2.5vw;
+  }
+  .p-Text {
+    font-size: 1.2vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .title-Text {
+    font-size: 16px;
+  }
+
+  .p-Text {
+    font-size: 12px;
+  }
+}

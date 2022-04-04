@@ -1,13 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
   const [activebtn, setactivebtn] = useState("");
 
-  function refreshPage() {
-    // window.location.reload(false);
-  }
   const activeLink = async () => {
     let Url = window.location.href;
     if (Url.includes("Reviews")) {
@@ -29,14 +26,14 @@ const Header = () => {
       <header className="MainBoxofHeder">
         <nav className="nav-box">
           <Link
-            className={`headerLink ${activebtn === "Home" ? "active" : ""}`}
+            className={`headerLink ${activebtn === "Home" ? "" : ""}`}
             onClick={activeLink}
             to="/"
           >
             Home
           </Link>
           <Link
-            className={`headerLink ${activebtn === "Reviews" ? "active" : ""}`}
+            className={`headerLink ${activebtn === "Reviews" ? "" : ""}`}
             onClick={activeLink}
             to="/Reviews"
           >
@@ -44,7 +41,7 @@ const Header = () => {
           </Link>
           <Link
             className={`headerLink ${
-              activebtn === "Dashboard" ? "active" : ""
+              activebtn === "Dashboard" ? "" : ""
             }`}
             onClick={activeLink}
             to="/Dashboard"
@@ -52,14 +49,14 @@ const Header = () => {
             Dashboard
           </Link>
           <Link
-            className={`headerLink ${activebtn === "Blogs" ? "active" : ""}`}
+            className={`headerLink ${activebtn === "Blogs" ? "" : ""}`}
             onClick={activeLink}
             to="/Blogs"
           >
             Blogs
           </Link>
           <Link
-            className={`headerLink ${activebtn === "Abouts" ? "active" : ""}`}
+            className={`headerLink ${activebtn === "Abouts" ? "" : ""}`}
             onClick={activeLink}
             to="/Abouts"
           >
