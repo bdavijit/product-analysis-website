@@ -29,7 +29,7 @@ const Home = () => {
         </div>
 
         <div>
-          <h1>{Products[0]?.name}</h1>
+          <h1 style={{ color: "#2827CC" }}>{Products[0]?.name}</h1>
           <p>{Products[0]?.detail}</p>
         </div>
       </section>

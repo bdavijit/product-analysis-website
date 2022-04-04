@@ -15,7 +15,7 @@ const ReviewCard2 = ({image,Username , rate , comment }) => {
           />
         </div>
         <div>
-          <h4>{Username}</h4>
+          <h4 style={{ color: "#2827CC" }}>{Username}</h4>
           <p>{comment}</p>
           <p>Rating: {rate}</p>
         </div>
