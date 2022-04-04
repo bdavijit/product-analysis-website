@@ -58,7 +58,7 @@ const Header = () => {
           <Link
             className={`headerLink ${activebtn === "Abouts" ? "" : ""}`}
             onClick={activeLink}
-            to="/Abouts"
+            to="/About"
           >
             abouts
           </Link>

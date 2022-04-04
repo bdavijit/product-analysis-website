@@ -26,7 +26,7 @@ const MainPage = () => {
   // }, []);
 
   useEffect(() => {
-    SetDisplayBlog(blogs.slice(0, 3));
+    SetDisplayBlog(blogs?.slice(0, 3));
   }, [blogs]);
 
   const setBtn = (BtnsID, index) => {

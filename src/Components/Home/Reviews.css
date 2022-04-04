@@ -1,0 +1,25 @@
+.ReviewBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+
+  width: 90%;
+  margin: auto;
+  padding: 30px;
+}
+.ReviewCard {
+  padding: 5px;
+  /* border: 1px solid black; */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.ReviewCard img {
+  border-radius: 50%;
+  height: 200px;
+}
+@media screen and (max-width: 817px) {
+  .ReviewBox {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
