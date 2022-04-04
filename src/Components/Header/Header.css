@@ -1,0 +1,31 @@
+.MainBoxofHeder {
+  background-color: #120E43;
+}
+
+.nav-box {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  max-width: 1000px;
+  margin: auto;
+}
+.headerLink {
+  text-decoration: none;
+  color: whitesmoke;
+
+  font-size: 2vw;
+}
+.headerLink:hover{
+    background-color: #2827CC;
+    color: whitesmoke;
+}
+.active{
+    background-color: #2827CC;
+    color: whitesmoke 
+}
+
+@media only screen and (max-width: 700px) {
+  .headerLink {
+    font-size: 3vw;
+  }
+}
