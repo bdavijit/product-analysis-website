@@ -43,9 +43,6 @@ const Home = () => {
             comment={Review?.comment}
           />
         ))}
-
-   
-       
       </section>
       <button className="main-button">
            <Link to="/Reviews" style={{textDecoration: "none", color:"white"}}>More</Link>
